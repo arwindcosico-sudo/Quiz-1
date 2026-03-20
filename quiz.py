@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 
 root = tk.Tk()
-root.title("Tic Tac Toe ni Zedhy")
+root.title("Tic Tac Toe by Arwind_pogi")
 
 
 current_player = "X"
@@ -37,10 +37,10 @@ def on_click(row, col):
     if buttons[row][col]["text"] == "":
         buttons[row][col]["text"] = current_player
         if check_winner():
-            messagebox.showinfo("Game Over", f"Player {current_player} wins!")
+            messagebox.showinfo("Game Over", f"Player {current_player} panalo ka!")
             reset_game()
         elif check_draw():
-            messagebox.showinfo("Game Over", "It's a draw!")
+            messagebox.showinfo("Game Over", "Draw lang par!")
             reset_game()
         else:
             current_player = "O" if current_player == "X" else "X"
