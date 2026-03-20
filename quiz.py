@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 
 root = tk.Tk()
-root.title("Tic Tac Toe by Arwind_pogi")
+root.title("Tic Tac Toe by Arwind_pogi.")
 
 
 current_player = "X"
